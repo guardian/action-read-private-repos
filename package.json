@@ -1,0 +1,15 @@
+{
+  "name": "with-private-repos-action",
+  "version": "0.1.0",
+  "description": "Access private Guardian repos in a Github Action.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/guardian/with-private-repos-action"
+  },
+  "author": "",
+  "license": "ISC"
+}
