@@ -1,0 +1,9 @@
+name: "guardian/actions-read-private-repos"
+description: "Access private Guardian repos in a Github Action."
+inputs:
+  private-ssh-keys:
+    description: One or more (private SSH) Deploy Keys. Note, keys must be ed25519; rsa is not supported. The target repository must be added as a comment to the key, e.g. like `ssh-keygen ... -C "git@github.com:guardian/repo.git"`.
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
