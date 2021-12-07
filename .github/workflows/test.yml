@@ -1,0 +1,14 @@
+name: test
+on: [pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+      - uses: ./
+        with:
+          private-ssh-keys: ${{ secrets.TEST_PRIVATE_REPOSITORY_DEPLOY_KEY }}
+      - run: npm install git+ssh://git@github.com/guardian/test-private-repository.git
