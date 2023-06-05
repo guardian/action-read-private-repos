@@ -1,6 +1,6 @@
 {
   "name": "with-private-repos-action",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Access private Guardian repos in a Github Action.",
   "main": "index.js",
   "scripts": {
