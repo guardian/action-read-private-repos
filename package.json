@@ -4,7 +4,7 @@
   "description": "Access private Guardian repos in a Github Action.",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.ts --bundle --platform=node --target=node12 --outfile=index.js"
+    "build": "esbuild index.ts --bundle --platform=node --target=node16 --outfile=index.js"
   },
   "repository": {
     "type": "git",
