@@ -15,7 +15,7 @@ Both NPM and SBT support resolving Github dependencies via SSH.
 ## Usage
 
 ```
-uses: guardian/actions-read-private-repos@v0.1.0
+uses: guardian/actions-read-private-repos@v1
 with:
   private-ssh-keys: |
     [SSH secret key]
@@ -25,7 +25,7 @@ with:
 For example, this might look like:
 
 ```
-uses: guardian/actions-read-private-repos@v0.1.0
+uses: guardian/actions-read-private-repos@v1
 with:
   private-ssh-keys: ${{ secrets.PRIVATE_INFRASTRUCTURE_CONFIG_DEPLOY_KEY }}
 ```
